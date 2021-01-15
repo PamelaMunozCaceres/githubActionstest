@@ -20,7 +20,8 @@ jobs:
         token: ${{ secrets.TELEGRAM_TOKEN }}
         args: The ${{ github.event_name }} event triggered a SAM Deploy with GithubActions.
     - name: set env variable
-      run: export v=helloworld
+      env:
+        v: helloworld
     - name: Run python
       run: python envtest.py
     - name: AWS deploy!
