@@ -38,7 +38,7 @@ jobs:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
         args: Everything work perfectly, you can be happy and rest.
-    - name:Telegram deploy FAIL
+    - name: Telegram deploy FAIL
       if: ${{ failure() }}
       uses: appleboy/telegram-action@master
       with:
