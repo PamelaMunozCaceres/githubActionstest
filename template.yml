@@ -13,6 +13,8 @@ Globals:
 Parameters:
   TestParameter:
     Type: String
+    AllowedValues:
+      - /hitest
 
 Resources:
   HelloWorldFunction:
